@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Support.UI;
+=======
+using OpenQA.Selenium;
+using OpenQA.Selenium.Edge;
+>>>>>>> d11853c1c45dca90126068e52d568c08bbc98be2
 =======
 using OpenQA.Selenium;
 using OpenQA.Selenium.Edge;
@@ -12,7 +17,10 @@ namespace Clase_1_Automatizacion_27_10_2025
     public class Tests
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
     
+=======
+>>>>>>> d11853c1c45dca90126068e52d568c08bbc98be2
 =======
 >>>>>>> d11853c1c45dca90126068e52d568c08bbc98be2
         private IWebDriver driver; //Variable privada que se inicializa en el setup
@@ -20,6 +28,7 @@ namespace Clase_1_Automatizacion_27_10_2025
         [SetUp]
         public void Setup()
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
             var options = new EdgeOptions(); //Se crea la variable, hace el llamado al driver que se utilizará
             driver = new EdgeDriver(options);
@@ -163,6 +172,15 @@ namespace Clase_1_Automatizacion_27_10_2025
         [Test] //Los Test o el etiquetado de test siempre deben estar.
         public void TestNavegar()
         {
+=======
+            var options = new EdgeOptions(); //Se crea la variable, hace el llamado al driver que se utilizar�
+            driver = new EdgeDriver(options);
+        }
+
+        [Test] //Los Test o el etiquetado de test siempre deben estar.
+        public void TestNavegar()
+        {
+>>>>>>> d11853c1c45dca90126068e52d568c08bbc98be2
             driver.Navigate().GoToUrl("https://www.bing.com"); //Siempre lleva punto y coma                                                  
             driver.Manage().Window.Maximize(); //para maximizar la ventana del navegador.
             // Assert.Pass();
@@ -171,6 +189,9 @@ namespace Clase_1_Automatizacion_27_10_2025
         public void TearDown()
         {
             driver.Quit(); //Quito o cierro el driver.
+<<<<<<< HEAD
+>>>>>>> d11853c1c45dca90126068e52d568c08bbc98be2
+=======
 >>>>>>> d11853c1c45dca90126068e52d568c08bbc98be2
         }
     }
